@@ -1,5 +1,6 @@
 import 'package:chat_app/views/register_view.dart';
 import 'package:flutter/material.dart';
+import '../constant.dart';
 import '../widget/custom_button.dart';
 import '../widget/custom_text_field.dart';
 
@@ -9,7 +10,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff284461),
+      backgroundColor: kPrimaryColor,
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
