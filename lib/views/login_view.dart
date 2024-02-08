@@ -43,7 +43,7 @@ class LoginView extends StatelessWidget {
                 const SizedBox(
                   height: 25,
                 ),
-                CustomTextField(
+                const CustomTextField(
                   keyboardType: TextInputType.streetAddress,
                   hintText: 'Email',
                   obscureText: false,
@@ -51,7 +51,7 @@ class LoginView extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                CustomTextField(
+                const CustomTextField(
                   hintText: 'Password',
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: true,

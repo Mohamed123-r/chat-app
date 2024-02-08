@@ -1,4 +1,3 @@
-import 'package:chat_app/views/login_view.dart';
 import 'package:flutter/material.dart';
 import '../widget/custom_button.dart';
 import '../widget/custom_text_field.dart';
@@ -43,7 +42,7 @@ class RegisterView extends StatelessWidget {
                 const SizedBox(
                   height: 25,
                 ),
-                CustomTextField(
+                const CustomTextField(
                   keyboardType: TextInputType.streetAddress,
                   hintText: 'Email',
                   obscureText: false,
@@ -51,7 +50,7 @@ class RegisterView extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                CustomTextField(
+                const CustomTextField(
                   hintText: 'Password',
                   keyboardType: TextInputType.visiblePassword,
                   obscureText: true,
