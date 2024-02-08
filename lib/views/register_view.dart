@@ -1,10 +1,10 @@
-import 'package:chat_app/views/register_view.dart';
+import 'package:chat_app/views/login_view.dart';
 import 'package:flutter/material.dart';
 import '../widget/custom_button.dart';
 import '../widget/custom_text_field.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class RegisterView extends StatelessWidget {
+  const RegisterView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class LoginView extends StatelessWidget {
                 const Row(
                   children: [
                     Text(
-                      "Sing In",
+                      "Register",
                       style: TextStyle(
                         fontSize: 24,
                       ),
@@ -59,29 +59,24 @@ class LoginView extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
-                const CustomButton(text: 'Log In',),
+                const CustomButton(
+                  text: 'Register',
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "don't have an account",
+                      "ready have an account",
                       style: TextStyle(
                         fontSize: 15,
                       ),
                     ),
                     TextButton(
                       onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return const RegisterView();
-                            },
-                          ),
-                        );
+                        Navigator.pop(context);
                       },
                       child: const Text(
-                        "Register",
+                        "Log in ",
                         style: TextStyle(
                           color: Color(0xffC6E8E8),
                         ),
